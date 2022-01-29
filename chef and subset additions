@@ -1,0 +1,18 @@
+t=int(input())
+f=0
+for i in range(0,t):
+    n,x,y=input().split()
+    n,x,y=int(n),int(x),int(y)
+    a=list(map(int,input().split()))
+    b=list(map(int,input().split()))
+    for i in range(0,n):
+     if a[i]+x==b[i] or a[i]+y==b[i]:
+        f=0
+     else:
+        f=f+1
+     if f!=0:
+        break
+    if f==0:
+        print("yes")
+    else:
+        print("no")
